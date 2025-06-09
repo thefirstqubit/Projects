@@ -1,0 +1,19 @@
+# clamav
+
+sudo freshclam
+
+sudo mkdir -p $(brew --prefix)/var/lib/clamav
+sudo chown -R _clamav:_clamav $(brew --prefix)/var/lib/clamav
+brew link --overwrite openssl@3
+
+sudo freshclam
+
+sudo clamscan -r --infected --bell /
+
+mkdir ~/ClamAV_Quarantine  
+sudo clamscan -r --move=/Users/YourUsername/ClamAV_Quarantine --infected --bell /
+sudo clamscan -r --remove --infected --bell /
+
+
+
+  
