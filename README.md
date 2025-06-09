@@ -2,7 +2,7 @@
 
 This is a real-life security incident that occured on my Macbook and its OS. What was originally intended to be a home network strengthening lab turned out to be an actual, real security incident. 
 
-<a href="https://github.com/thefirstqubit/labs/blob/main/suricata/triggering_customrules_on_pcapfile.md">Comprehensive Security Incident Report</a>
+<a href="https://docs.google.com/document/d/1wDaBuVRIQmXg2uPwUFMGU0rKyO-rpt2zUJBy1ySQyKg/edit?usp=sharing">Comprehensive Security Incident Report</a>
 
 # Detection of IOCs and Analyses:
 
