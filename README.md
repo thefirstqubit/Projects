@@ -42,8 +42,7 @@ Based on the persistent nature of the threat and root-level compromise, the deci
 - Clean OS Reinstallation: macOS was subsequently reinstalled from a trusted source (Apple's recovery servers) onto the now-clean disk.
 - Factory reset and re-configuration of home network router and router settings.
 
-
-* I gained a lot of new Linux CLI and clamav skills throughout this security experience.  Please see the link at the beginning of the page for the full comprehensive Security Incident Report !
+I gained a lot of new Linux CLI and clamav skills throughout this security experience.  Please see the link at the beginning of the page for the full comprehensive Security Incident Report !
 
 
   
