@@ -1,4 +1,4 @@
-# clamav
+## clamav commands used to update, quarantine files and remove
 
 sudo freshclam
 
