@@ -13,7 +13,14 @@ sudo clamscan -r --infected --bell /
 mkdir ~/ClamAV_Quarantine  
 sudo clamscan -r --move=/Users/YourUsername/ClamAV_Quarantine --infected --bell /
 sudo clamscan -r --remove --infected --bell /
+rmdir ClamAV_Quarantine
 
+## commands for dealing with Docker residuals and APT ##
+
+ls -l
+cat
+sudo find / -iname "*docker*" -o -iname "*com.docker*" -o -iname "*io.docker*" 2>/dev/null
+sudo rm -rf 
 
 
   
