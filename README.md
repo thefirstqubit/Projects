@@ -32,7 +32,8 @@ IOC 3:  Highly Suspicious Docker Desktop Activity
 
 <img width="1056" alt="replication_proof" src="https://github.com/user-attachments/assets/65695727-4399-4635-8e3c-75e3063456a1" />
 
-<img width="1058" alt="unable_delete_2" src="https://github.com/user-attachments/assets/6644ffbb-cc9d-4dc7-80bb-c205eb1c83d9" />
+
+<img width="1058" alt="unable_delete_2" src="https://github.com/user-attachments/assets/35a6c2b9-8405-4745-8f63-987db9ad9f9b" />
 
 # Response & Recovery
 
