@@ -1,4 +1,4 @@
-# Project:  Compromised macOS: Win.Trojan R57-2 & Root APT 
+# Compromised macOS: Win.Trojan R57-2 & Root APT 
 
 This is a real-life security incident that occured on my Macbook and its OS. What was originally intended to be a home network strengthening lab turned out to be an actual, real security incident. 
 
