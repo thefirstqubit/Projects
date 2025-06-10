@@ -8,8 +8,8 @@ This is a real-life security incident that occured on my Macbook and its OS. Wha
 
 IOC 1: VMware Fusion (moved images) and Kali Linux (user login bypass)
 
-- While attempting to boot VMware Fusion and Kali Linux, notification alert stating Debian image file had been moved. Suspicious because files were never moved. 
-- To further investigate, Debian image file were located and proceededed to launch VMware. Upon successful boot the virtual machine bypassed user login page.
+- Unable to boot VMware Fusion after notification alert stating Debian image file had been moved. Highly suspicious because files were never moved. 
+- To further investigate, Debian image file were located and proceededed to launch VMware. Upon successful boot, virtual machine bypassed Kali Linux user login page.
 
 *** Double checked with Google Gemini to see if this was suspicious.  Conclusion: YES, run a comprehensive system scan with clamav *** 
 
