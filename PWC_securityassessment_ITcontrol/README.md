@@ -7,7 +7,6 @@
 - Utilized NIST 800-64 and Sarbanes Oxley
 - Implemented AAA framework
 - Completed a Test of Design and Operating Effectiveness documentation
-- Created a one-slide summary to present findings
 
 ## Risk & Gap Analysis ##
 
@@ -32,7 +31,10 @@ purchasing can write checks. (Risk 4)
 formal user access request and verification process. (Risk 4)
 6. Potential BP GAP: No evidence of cash reconciliation process. (Risk 3)
 
+## Test of Design and Operating Effectiveness Documentation ##
+
 <a href="https://docs.google.com/spreadsheets/d/1G6DXWPB57IRgeFbV1n3Ua0gLZnJ_iuUsEn1iwi-2Gyk/edit?usp=sharing">Test of Design & AAA Controls</a>
 
+## Summary ##
 
 <img width="1412" alt="Screenshot 2025-06-20 at 7 49 54 PM" src="https://github.com/user-attachments/assets/a262d0c5-2d3b-4075-9cb3-c083435a073e" />
