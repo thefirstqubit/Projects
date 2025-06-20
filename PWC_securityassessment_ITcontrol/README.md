@@ -9,5 +9,6 @@
 - Completed a Test of Design and Operating Effectiveness documentation
 - Created a one-slide summary to present findings
 
-
 <a href="https://docs.google.com/spreadsheets/d/1G6DXWPB57IRgeFbV1n3Ua0gLZnJ_iuUsEn1iwi-2Gyk/edit?usp=sharing">Test of Design & AAA Controls</a>
+
+<img width="1412" alt="Screenshot 2025-06-20 at 7 49 54 PM" src="https://github.com/user-attachments/assets/a262d0c5-2d3b-4075-9cb3-c083435a073e" />
