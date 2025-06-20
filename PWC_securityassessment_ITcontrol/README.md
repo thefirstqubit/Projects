@@ -1,4 +1,4 @@
-## PWC Cybersecurity Assessment and IT General Controls Implementation 
+## PWC Cybersecurity Risk Analysis and ITGC Implementation 
 
 <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/CA4pBqsy4b4PdyaBP/4KqDALSkyRNPXjQGa_CA4pBqsy4b4PdyaBP_7xKJisfSm6yWBJk9S_1750412922028_completion_certificate.pdf">Certificate of Completion </a>
 
