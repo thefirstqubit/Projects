@@ -2,9 +2,9 @@
 
 This is a real-life security incident that occured on my Macbook and its OS. What was originally intended to be a home network strengthening lab turned out to be an actual, real security incident. 
 
-I learned a bunch of new Linux commands and furthered my skillsets in clamav through this security experience. It was my first time being able to proactively apply NIST 800-61 and I gained extensive insight into IOC analysis.  As a beginner cybersecurity analyst, I found myself in a few positions where I was unsure of how to assess what I was looking at or what steps to take next.  In these moments, I proactively utilized Gemini and effective prompting to aid me in problem solving. 
+I learned a bunch of new Linux commands and furthered my skillsets in clamav through this experience. It was my first time being able to proactively apply NIST 800-61 and I gained extensive insight into IOC analysis.  As a beginner, I found myself in a few positions where I was unsure of how to assess what I was looking at or what steps to take next.  In these moments, I proactively utilized Gemini and effective prompting to aid me in problem solving. 
 
-Tbh, I was a bit stressed and had to stay up all night after checking into a guesthouse for trusted internet connection but I made sure to push through until I was able solve the issue and fully restore my device! It was a great learning experience.
+I was a bit stressed and had to check into a guesthouse for trusted internet connection but I made sure to push through until I was able solve the issue and fully restore my device! It was a great learning experience.
 
 <a href="https://docs.google.com/document/d/1wDaBuVRIQmXg2uPwUFMGU0rKyO-rpt2zUJBy1ySQyKg/edit?usp=sharing">Comprehensive Security Incident Report</a>
 
