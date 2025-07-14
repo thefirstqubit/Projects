@@ -1,0 +1,27 @@
+## Create VMs and Test for Latency
+
+# test-1 instance
+
+gcloud compute instances create us-test-01 \
+--subnet subnet-us-west1 \
+--zone us-west1-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-2 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-3 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+
