@@ -1,4 +1,4 @@
-## Setting Region and Zone 
+## Setting Region and Zone ##
 
 gcloud config set compute/zone "Zone"
 export ZONE=$(gcloud config get compute/zone)
@@ -6,7 +6,7 @@ export ZONE=$(gcloud config get compute/zone)
 gcloud config set compute/region "Region"
 export REGION=$(gcloud config get compute/region)
 
-## Creating Custom Network 
+## Creating Custom Network ##
 
 gcloud compute networks create taw-custom-network --subnet-mode custom
 
@@ -31,7 +31,7 @@ gcloud compute networks subnets create subnet-europe-west1
    --range 10.2.0.0/16
 
 
-## Firewall Rules
+## Firewall Rules ##
 
 # HTTP Rules for VMs in Network*
 
@@ -54,4 +54,82 @@ gcloud compute firewall-rules create "nw101-allow-ssh" --allow tcp:22 --network 
 # RDP Rule
 
 gcloud compute firewall-rules create "nw101-allow-rdp" --allow tcp:3389 --network "taw-custom-network"
+
+## Create VMs and Test for Latency ##
+
+# test-1 instance
+
+gcloud compute instances create us-test-01 \
+--subnet subnet-us-west1 \
+--zone us-west1-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-2 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-3 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+## Create VMs ##
+
+# test-1 instance
+
+gcloud compute instances create us-test-01 \
+--subnet subnet-us-west1 \
+--zone us-west1-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-2 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+# VM test-3 subnet
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+## Test Latency between VMs with Ping ##
+
+ping -c 3 <us-test-02-external-ip-address>
+
+## Traceroute and Performance Testing ##
+
+# Install Tracerout
+
+sudo apt-get update
+sudo apt-get -y install traceroute mtr tcpdump iperf whois host dnsutils siege
+
+## Use iperf to Test Performance ##
+
+# SSH into us-test-02 and install the performance tools
+
+sudo apt-get update
+sudo apt-get -y install traceroute mtr tcpdump iperf whois host dnsutils siege
+
+# SSH into us-test-01 and run:
+
+iperf -s #run in server mode
+
+# On us-test-02 SSH run this iperf:
+
+iperf -c us-test-01.us-west1-a #run in client mode
 
