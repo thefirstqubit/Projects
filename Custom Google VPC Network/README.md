@@ -1,4 +1,4 @@
-# Custom Google Cloud Network w/ Subnets & Firewall Rules ##
+# Custom Google Cloud Network w/ Subnets & Firewall Rules #
 
 *Implementation via both GCC GUI and Cloud Shell CLI*
 
@@ -72,8 +72,70 @@ gcloud compute firewall-rules create "nw101-allow-rdp" --allow tcp:3389 --networ
 <img width="1315" height="605" alt="final_firewalls_set" src="https://github.com/user-attachments/assets/8e6d8a1f-1502-4e75-9592-542ad25a9860" />
 
 
+## Create VMs and Test for Latency ##
 
+*test-1 instance* 
 
+gcloud compute instances create us-test-01 \
+--subnet subnet-us-west1 \
+--zone us-west1-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
 
-   
+*test-2 instance* 
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+*test-3 instance* 
+
+gcloud compute instances create us-test-03 \
+--subnet subnet-europe-west4 \
+--zone europe-west4-a \
+--machine-type e2-standard-2 \
+--tags ssh,http,rules
+
+<img width="1545" height="408" alt="Screenshot 2025-07-14 at 8 45 16 PM" src="https://github.com/user-attachments/assets/295554bd-749d-4c4d-86fd-88cc36deecc1" />
+
+## Test Latency between VMs with Ping ##
+
+ping -c 3 <us-test-02-external-ip-address>
+
+<img width="560" height="159" alt="Screenshot 2025-07-14 at 8 52 23 PM" src="https://github.com/user-attachments/assets/86d74369-dfbd-44dd-a136-2ee2b74cb4c7" />
+
+## Traceroute and Performance Testing ##
+
+*Install Tracerout*
+
+sudo apt-get update
+sudo apt-get -y install traceroute mtr tcpdump iperf whois host dnsutils siege
+
+*use traceroute with websites*
+
+traceroute www.icann.org
+
+traceroute www.wikipedia.org
+
+<img width="802" height="610" alt="Screenshot 2025-07-14 at 9 00 43 PM" src="https://github.com/user-attachments/assets/d1e205e9-0f29-457c-8a82-e8e38b6dc940" />
+
+## iperf to test performance (network throughput and latency ##
+
+*SSH into us-test-02 and install the performance tools*
+
+sudo apt-get update
+sudo apt-get -y install traceroute mtr tcpdump iperf whois host dnsutils siege
+
+*SSH into us-test-01 and run*
+
+iperf -s #run in server mode
+
+*On us-test-02 SSH run this iperf*
+
+iperf -c us-test-01.us-west1-a #run in client mode
+
+<img width="1648" height="719" alt="iperf_test 1 3" src="https://github.com/user-attachments/assets/731a8474-079b-4810-bc14-08b4b37ac672" />
+
 
